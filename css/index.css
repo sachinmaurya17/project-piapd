@@ -1,0 +1,44 @@
+/*************************************** google font awsome ***************************************/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+html{
+    --black:rgb(0, 0, 0);
+    --purple:rgb(240, 26, 240);
+    --mainColor:rgb(28, 116, 156);
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.6;
+    font-size: 20px;
+}
+.navbar{
+   background-image:linear-gradient(to right,var(--mainColor),white);
+   
+}
+.navbar>.container-fluid>a>img{
+    height: 80px;
+    width: 80px;
+}
+.company-name{
+    text-transform: uppercase;
+    font-size:0.8rem;
+    font-weight: bolder;
+    padding-left:10px ;
+}
+.comapny-name__largerFontSize{
+    font-size: 2em;
+}
+/* Moblie size */
+@media only screen and (max-width: 600px) {
+    .company-name{
+        font-size:0.5rem;
+        margin-left: -30px;
+    }
+    .comapny-name__largerFontSize{
+        font-size: 1rem;
+    }
+}
