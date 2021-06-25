@@ -5,6 +5,9 @@ html{
     --black:rgb(0, 0, 0);
     --purple:rgb(240, 26, 240);
     --mainColor:rgb(28, 116, 156);
+    --white:#fff;
+    --opacitylowWhite:rgba(248, 246, 246, 0.185);
+    --grayColor:#e8e8e885;
     
 }
 body{
@@ -16,7 +19,7 @@ body{
     font-size: 20px;
 }
 .navbar{
-   background-image:linear-gradient(to right,var(--mainColor),white);
+   background-image:linear-gradient(to right,var(--mainColor),var(--white));
    
 }
 .navbar>.container-fluid>a>img{
@@ -32,6 +35,14 @@ body{
 .comapny-name__largerFontSize{
     font-size: 2em;
 }
+
+/* section part 1st */
+.head-down{
+    height: 600px;
+    background-image: linear-gradient(to right ,var(--opacitylowWhite),var(--grayColor)),url('../img/background-images.jpg');
+    background-size:100% 100%;
+   
+}
 /* Moblie size */
 @media only screen and (max-width: 600px) {
     .company-name{
@@ -41,4 +52,12 @@ body{
     .comapny-name__largerFontSize{
         font-size: 1rem;
     }
+
+
+    /* hand-imges-section */
+    .head-down{
+        height: 400px;
+       flex-direction: column;
+    }
+    
 }
